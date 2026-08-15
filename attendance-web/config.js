@@ -2,8 +2,8 @@
 // (which persists to localStorage — handy if you want to point the same
 // deployed site at a different repo without rebuilding).
 window.ATTENDANCE_CONFIG = {
-  owner: "your-github-username",
-  repo: "your-repo-name",
+  owner: "KENSEI-dev",
+  repo: "Attendance-App",
   path: "attendance.json",
   branch: "main",
   // How often the page re-fetches attendance.json in the background, in minutes.

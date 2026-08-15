@@ -35,11 +35,17 @@ class AttendanceFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.todayLabel.text = "Today — ${viewModel.today}"
-
         adapter = AttendanceAdapter(onMark = { subjectId, status -> viewModel.mark(subjectId, status) })
         binding.attendanceList.layoutManager = LinearLayoutManager(requireContext())
         binding.attendanceList.adapter = adapter
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.today.collect { today ->
+                    binding.todayLabel.text = "Today — $today"
+                }
+            }
+        }
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -49,6 +55,14 @@ class AttendanceFragment : Fragment() {
                 }
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // The actual fix: re-check the system date every time this tab comes
+        // back into view, not just when the ViewModel happens to be freshly
+        // created. Cheap no-op if the date hasn't changed.
+        viewModel.refreshToday()
     }
 
     override fun onDestroyView() {

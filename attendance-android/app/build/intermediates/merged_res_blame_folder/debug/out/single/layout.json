@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/fragment_attendance.xml",
+        "source": "com.attendance.app-main-58:/layout/fragment_attendance.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/item_attendance.xml",
+        "source": "com.attendance.app-main-58:/layout/item_attendance.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "com.attendance.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/widget_attendance.xml",
+        "source": "com.attendance.app-main-58:/layout/widget_attendance.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/fragment_sync.xml",
+        "source": "com.attendance.app-main-58:/layout/fragment_sync.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/fragment_subjects.xml",
+        "source": "com.attendance.app-main-58:/layout/fragment_subjects.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/fragment_publish.xml",
+        "source": "com.attendance.app-main-58:/layout/fragment_publish.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeDebugResources-55:/layout/item_subject.xml",
+        "source": "com.attendance.app-main-58:/layout/item_subject.xml"
+    }
+]

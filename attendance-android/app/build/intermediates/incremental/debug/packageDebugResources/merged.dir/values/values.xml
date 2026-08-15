@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="absent_red">#D64545</color>
+    <color name="background">#FAFAFC</color>
+    <color name="cancelled_grey">#8A8F98</color>
+    <color name="empty_dot">#E4E6EA</color>
+    <color name="present_green">#2E9E5B</color>
+    <color name="primary">#3B6FE0</color>
+    <color name="primary_dark">#2C54B3</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#1A1C1E</color>
+    <color name="text_secondary">#6B7078</color>
+    <color name="widget_background">#FFFFFF</color>
+    <string name="app_name">Attendance</string>
+    <string name="title_attendance">Attendance</string>
+    <string name="title_publish">Publish</string>
+    <string name="title_subjects">Subjects</string>
+    <string name="title_sync">Sync</string>
+    <string name="widget_description">Shows your attendance dot-matrix on the homescreen</string>
+    <string name="widget_matrix_content_description">Attendance dot matrix, one dot per day</string>
+    <string name="widget_placeholder_percentage">Attendance</string>
+    <string name="widget_placeholder_updated_at">Not updated yet</string>
+    <string name="widget_refresh_content_description">Refresh widget</string>
+    <string name="widget_updated_at">Updated %1$s</string>
+    <style name="Theme.AttendanceApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>
