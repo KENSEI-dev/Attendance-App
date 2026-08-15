@@ -1,0 +1,15 @@
+<resources>
+    <color name="primary">#3B6FE0</color>
+    <color name="primary_dark">#2C54B3</color>
+    <color name="present_green">#2E9E5B</color>
+    <color name="absent_red">#D64545</color>
+    <color name="cancelled_grey">#8A8F98</color>
+    <color name="background">#FAFAFC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#1A1C1E</color>
+    <color name="text_secondary">#6B7078</color>
+
+    <!-- Widget-only (Session 4) -->
+    <color name="empty_dot">#E4E6EA</color>
+    <color name="widget_background">#FFFFFF</color>
+</resources>

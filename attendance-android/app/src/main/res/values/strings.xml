@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Attendance</string>
+    <string name="title_subjects">Subjects</string>
+    <string name="title_attendance">Attendance</string>
+    <string name="title_sync">Sync</string>
+    <string name="title_publish">Publish</string>
+
+    <!-- Widget (Session 4) -->
+    <string name="widget_description">Shows your attendance dot-matrix on the homescreen</string>
+    <string name="widget_refresh_content_description">Refresh widget</string>
+    <string name="widget_matrix_content_description">Attendance dot matrix, one dot per day</string>
+    <string name="widget_placeholder_percentage">Attendance</string>
+    <string name="widget_placeholder_updated_at">Not updated yet</string>
+    <string name="widget_updated_at">Updated %1$s</string>
+</resources>
