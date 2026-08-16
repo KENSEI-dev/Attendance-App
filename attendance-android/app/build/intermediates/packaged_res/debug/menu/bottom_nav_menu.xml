@@ -5,6 +5,10 @@
         android:icon="@android:drawable/ic_menu_agenda"
         android:title="@string/title_attendance" />
     <item
+        android:id="@+id/calendarFragment"
+        android:icon="@android:drawable/ic_menu_month"
+        android:title="@string/title_calendar" />
+    <item
         android:id="@+id/subjectsFragment"
         android:icon="@android:drawable/ic_menu_edit"
         android:title="@string/title_subjects" />

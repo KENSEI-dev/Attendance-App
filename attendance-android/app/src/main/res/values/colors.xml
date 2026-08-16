@@ -12,4 +12,10 @@
     <!-- Widget-only (Session 4) -->
     <color name="empty_dot">#E4E6EA</color>
     <color name="widget_background">#FFFFFF</color>
+
+    <!-- Calendar tab only — the dot-matrix/widget deliberately leave a
+         holiday showing as an empty dot (no records = no dot), but the
+         interactive calendar needs to actually distinguish "holiday" from
+         "you forgot to mark this," so it gets its own color here. -->
+    <color name="holiday_purple">#8B5CF6</color>
 </resources>

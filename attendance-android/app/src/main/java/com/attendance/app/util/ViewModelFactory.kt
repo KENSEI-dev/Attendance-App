@@ -12,6 +12,7 @@ import com.attendance.app.data.sync.SyncFolderManager
 import com.attendance.app.data.sync.SyncLogWriter
 import com.attendance.app.repository.AttendanceRepository
 import com.attendance.app.ui.attendance.AttendanceViewModel
+import com.attendance.app.ui.calendar.CalendarViewModel
 import com.attendance.app.ui.publish.PublishViewModel
 import com.attendance.app.ui.subjects.SubjectsViewModel
 import com.attendance.app.ui.sync.SyncViewModel
@@ -26,7 +27,7 @@ class ViewModelFactory(private val context: Context) : ViewModelProvider.Factory
     private val db: AppDatabase = AppDatabase.getInstance(context)
 
     init {
-        repository = AttendanceRepository(db.subjectDao(), db.attendanceDao(), deviceId, syncLogWriter)
+        repository = AttendanceRepository(db.subjectDao(), db.attendanceDao(), db.holidayDao(), deviceId, syncLogWriter)
     }
 
     @Suppress("UNCHECKED_CAST")
@@ -37,6 +38,9 @@ class ViewModelFactory(private val context: Context) : ViewModelProvider.Factory
 
             modelClass.isAssignableFrom(AttendanceViewModel::class.java) ->
                 AttendanceViewModel(repository, deviceId) as T
+
+            modelClass.isAssignableFrom(CalendarViewModel::class.java) ->
+                CalendarViewModel(repository, deviceId) as T
 
             modelClass.isAssignableFrom(SyncViewModel::class.java) -> {
                 val syncEngine = SyncEngine(context, folderManager, repository)

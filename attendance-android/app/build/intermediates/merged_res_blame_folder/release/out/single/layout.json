@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/fragment_calendar.xml",
+        "source": "com.attendance.app-main-57:/layout/fragment_calendar.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/fragment_attendance.xml",
+        "source": "com.attendance.app-main-57:/layout/fragment_attendance.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/fragment_sync.xml",
+        "source": "com.attendance.app-main-57:/layout/fragment_sync.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/item_subject.xml",
+        "source": "com.attendance.app-main-57:/layout/item_subject.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/activity_main.xml",
+        "source": "com.attendance.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/fragment_publish.xml",
+        "source": "com.attendance.app-main-57:/layout/fragment_publish.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/widget_attendance.xml",
+        "source": "com.attendance.app-main-57:/layout/widget_attendance.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/item_calendar_day.xml",
+        "source": "com.attendance.app-main-57:/layout/item_calendar_day.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/item_attendance.xml",
+        "source": "com.attendance.app-main-57:/layout/item_attendance.xml"
+    },
+    {
+        "merged": "com.attendance.app-mergeReleaseResources-55:/layout/fragment_subjects.xml",
+        "source": "com.attendance.app-main-57:/layout/fragment_subjects.xml"
+    }
+]

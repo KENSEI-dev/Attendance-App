@@ -81,7 +81,7 @@ public final class SubjectDao_Impl implements SubjectDao {
   }
 
   @Override
-  public Object insert(final SubjectEntity subject, final Continuation<? super Long> $completion) {
+  public Object insert(final SubjectEntity subject, final Continuation<? super Long> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Long>() {
       @Override
       @NonNull
@@ -95,11 +95,11 @@ public final class SubjectDao_Impl implements SubjectDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object delete(final SubjectEntity subject, final Continuation<? super Unit> $completion) {
+  public Object delete(final SubjectEntity subject, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -113,7 +113,7 @@ public final class SubjectDao_Impl implements SubjectDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
@@ -170,7 +170,7 @@ public final class SubjectDao_Impl implements SubjectDao {
   }
 
   @Override
-  public Object getById(final long id, final Continuation<? super SubjectEntity> $completion) {
+  public Object getById(final long id, final Continuation<? super SubjectEntity> arg1) {
     final String _sql = "SELECT * FROM subjects WHERE id = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -218,12 +218,11 @@ public final class SubjectDao_Impl implements SubjectDao {
           _statement.release();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object findByName(final String name,
-      final Continuation<? super SubjectEntity> $completion) {
+  public Object findByName(final String name, final Continuation<? super SubjectEntity> arg1) {
     final String _sql = "SELECT * FROM subjects WHERE name = ? LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -275,7 +274,7 @@ public final class SubjectDao_Impl implements SubjectDao {
           _statement.release();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @NonNull

@@ -2,6 +2,7 @@
     <string name="app_name">Attendance</string>
     <string name="title_subjects">Subjects</string>
     <string name="title_attendance">Attendance</string>
+    <string name="title_calendar">Calendar</string>
     <string name="title_sync">Sync</string>
     <string name="title_publish">Publish</string>
 

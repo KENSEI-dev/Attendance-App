@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:padding="3dp">
+
+    <!-- Background (fill color + optional selection ring) is built and
+         assigned entirely in code (CalendarDayAdapter) rather than via a
+         drawable selector, since it depends on several independent flags
+         (status, holiday, selected, today) that don't map cleanly onto
+         Android's built-in state list system. -->
+    <TextView
+        android:id="@+id/dayCircle"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/text_primary" />
+
+</FrameLayout>

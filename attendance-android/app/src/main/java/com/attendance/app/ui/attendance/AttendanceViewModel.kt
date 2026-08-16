@@ -2,6 +2,7 @@ package com.attendance.app.ui.attendance
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.attendance.app.data.HolidayRules
 import com.attendance.app.repository.AttendanceRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -9,9 +10,11 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
+import java.time.LocalDate
 import java.util.Date
 import java.util.Locale
 
@@ -74,6 +77,28 @@ class AttendanceViewModel(
             }
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
+    /** True when [today] is a holiday — either explicitly marked, or (new) any Saturday/Sunday via [HolidayRules]. */
+    val isTodayHoliday: StateFlow<Boolean> = todayFlow.flatMapLatest { date ->
+        repository.getHolidays().map { holidays -> HolidayRules.isHoliday(LocalDate.parse(date), holidays) }
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), false)
+
+    /** Whether the holiday toggle button should be shown at all — hidden on a weekend, see [HolidayRules.isOverridable]. */
+    val isTodayHolidayOverridable: StateFlow<Boolean> = todayFlow
+        .map { date -> HolidayRules.isOverridable(LocalDate.parse(date)) }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), true)
+
+    fun toggleTodayHoliday() {
+        viewModelScope.launch {
+            val date = todayFlow.value
+            if (!HolidayRules.isOverridable(LocalDate.parse(date))) return@launch // defense in depth — the button should already be hidden for this case
+            if (repository.getHoliday(date) != null) {
+                repository.unmarkHoliday(date)
+            } else {
+                repository.markHoliday(date)
+            }
+        }
+    }
 
     fun mark(subjectId: Long, status: String) {
         viewModelScope.launch {

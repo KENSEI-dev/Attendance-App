@@ -51,10 +51,50 @@ class AttendanceFragment : Fragment() {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.rows.collect { rows ->
                     adapter.submitList(rows)
-                    binding.emptyState.visibility = if (rows.isEmpty()) View.VISIBLE else View.GONE
+                    updateContentVisibility()
                 }
             }
         }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.isTodayHoliday.collect { isHoliday ->
+                    binding.holidayToggleButton.text = if (isHoliday) "Undo holiday" else "Mark as holiday"
+                    updateContentVisibility()
+                }
+            }
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                // Weekends are always a holiday now (HolidayRules) with no DB
+                // row behind them, so there's nothing for this button to
+                // toggle on those dates — hide it rather than show a tap that
+                // silently does nothing.
+                viewModel.isTodayHolidayOverridable.collect { overridable ->
+                    binding.holidayToggleButton.visibility = if (overridable) View.VISIBLE else View.GONE
+                }
+            }
+        }
+
+        binding.holidayToggleButton.setOnClickListener {
+            viewModel.toggleTodayHoliday()
+        }
+    }
+
+    /**
+     * Three mutually-exclusive states for the content area: holiday message,
+     * empty state (no subjects yet), or the actual attendance list. Called
+     * from both collectors since either one changing can flip which state
+     * applies.
+     */
+    private fun updateContentVisibility() {
+        val isHoliday = viewModel.isTodayHoliday.value
+        val hasRows = viewModel.rows.value.isNotEmpty()
+
+        binding.holidayMessageGroup.visibility = if (isHoliday) View.VISIBLE else View.GONE
+        binding.attendanceList.visibility = if (!isHoliday && hasRows) View.VISIBLE else View.GONE
+        binding.emptyState.visibility = if (!isHoliday && !hasRows) View.VISIBLE else View.GONE
     }
 
     override fun onResume() {

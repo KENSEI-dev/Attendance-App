@@ -45,6 +45,21 @@ actual round-trip testing done across Sessions 6–7, not just the design.
 ## Day to day
 
 - Mark attendance in the Android app as normal.
+- **Missed a day, or need to fix a past mark?** Use the **Calendar tab**
+  instead of Attendance — pick any date up to today, and the same
+  Present/Absent/Cancelled controls appear for that date. It writes to
+  the exact same place the Attendance tab would have if you'd marked it
+  on the correct day, so Sync, Publish, and the widget all pick it up
+  normally — there's nothing separate to "catch up."
+- **Saturdays and Sundays are always holidays now** — no input needed,
+  nothing to mark, both tabs show the holiday message automatically.
+  This is a hardcoded rule (`HolidayRules.isWeekend`), not something
+  toggled per-date — the "Mark/Undo holiday" button is hidden on weekends
+  because there's nothing in the database for it to toggle. If your
+  college actually holds Saturday classes some weeks (common enough to
+  be worth naming), there's currently no way to override a specific
+  weekend back to a working day — say so if you need that, it's a
+  reasonable follow-up, just not built yet.
 - Tap **Sync now** (Sync tab) when you want to pull in marks made on
   your other devices. This is manual, not automatic — nothing runs in
   the background except the widget's own periodic local refresh.

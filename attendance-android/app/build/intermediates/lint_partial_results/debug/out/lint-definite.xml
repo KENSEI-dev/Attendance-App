@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.2" type="incidents">
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Mark as holiday&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_attendance.xml"
+            line="35"
+            column="13"
+            startOffset="1282"
+            endLine="35"
+            endColumn="43"
+            endOffset="1312"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Add a subject first (Subjects tab)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_attendance.xml"
+            line="55"
+            column="13"
+            startOffset="1922"
+            endLine="55"
+            endColumn="62"
+            endOffset="1971"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Marked as a holiday — no attendance to record today.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_attendance.xml"
+            line="72"
+            column="17"
+            startOffset="2645"
+            endLine="72"
+            endColumn="84"
+            endOffset="2712"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;‹&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="27"
+            column="17"
+            startOffset="968"
+            endLine="27"
+            endColumn="33"
+            endOffset="984"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;›&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="44"
+            column="17"
+            startOffset="1633"
+            endLine="44"
+            endColumn="33"
+            endOffset="1649"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Sun&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="56"
+            column="204"
+            startOffset="2261"
+            endLine="56"
+            endColumn="222"
+            endOffset="2279"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Mon&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="57"
+            column="204"
+            startOffset="2486"
+            endLine="57"
+            endColumn="222"
+            endOffset="2504"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tue&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="58"
+            column="204"
+            startOffset="2711"
+            endLine="58"
+            endColumn="222"
+            endOffset="2729"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Wed&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="59"
+            column="204"
+            startOffset="2936"
+            endLine="59"
+            endColumn="222"
+            endOffset="2954"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Thu&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="60"
+            column="204"
+            startOffset="3161"
+            endLine="60"
+            endColumn="222"
+            endOffset="3179"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Fri&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="61"
+            column="204"
+            startOffset="3386"
+            endLine="61"
+            endColumn="222"
+            endOffset="3404"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Sat&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="62"
+            column="204"
+            startOffset="3611"
+            endLine="62"
+            endColumn="222"
+            endOffset="3629"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;● Present&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="86"
+            column="162"
+            startOffset="4699"
+            endLine="86"
+            endColumn="186"
+            endOffset="4723"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;● Absent&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="87"
+            column="162"
+            startOffset="4929"
+            endLine="87"
+            endColumn="185"
+            endOffset="4952"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;● Cancelled&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="88"
+            column="162"
+            startOffset="5155"
+            endLine="88"
+            endColumn="188"
+            endOffset="5181"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;● Holiday&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="89"
+            column="162"
+            startOffset="5388"
+            endLine="89"
+            endColumn="186"
+            endOffset="5412"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Mark as holiday&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="124"
+            column="17"
+            startOffset="6831"
+            endLine="124"
+            endColumn="47"
+            endOffset="6861"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Add a subject first (Subjects tab)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="134"
+            column="13"
+            startOffset="7155"
+            endLine="134"
+            endColumn="62"
+            endOffset="7204"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Marked as a holiday — no attendance to record on this date.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="149"
+            column="17"
+            startOffset="7747"
+            endLine="149"
+            endColumn="91"
+            endOffset="7821"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Publish&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="17"
+            column="13"
+            startOffset="546"
+            endLine="17"
+            endColumn="35"
+            endOffset="568"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Push an attendance.json summary to a GitHub repo. The Session 6 website will read this file to show your dashboard publicly — nothing here touches your Syncthing folder.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="26"
+            column="13"
+            startOffset="868"
+            endLine="26"
+            endColumn="197"
+            endOffset="1052"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="30"
+            column="10"
+            startOffset="1156"
+            endLine="30"
+            endColumn="18"
+            endOffset="1164"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Fine-grained PAT (Contents: read and write)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="35"
+            column="13"
+            startOffset="1357"
+            endLine="35"
+            endColumn="71"
+            endOffset="1415"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="39"
+            column="10"
+            startOffset="1510"
+            endLine="39"
+            endColumn="18"
+            endOffset="1518"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Repo owner (e.g. your GitHub username)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="44"
+            column="13"
+            startOffset="1713"
+            endLine="44"
+            endColumn="66"
+            endOffset="1766"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="48"
+            column="10"
+            startOffset="1853"
+            endLine="48"
+            endColumn="18"
+            endOffset="1861"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Repo name (e.g. attendance-data)&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="53"
+            column="13"
+            startOffset="2055"
+            endLine="53"
+            endColumn="60"
+            endOffset="2102"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="57"
+            column="10"
+            startOffset="2189"
+            endLine="57"
+            endColumn="18"
+            endOffset="2197"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;File path in repo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="62"
+            column="13"
+            startOffset="2391"
+            endLine="62"
+            endColumn="45"
+            endOffset="2423"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;attendance.json&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="64"
+            column="13"
+            startOffset="2473"
+            endLine="64"
+            endColumn="43"
+            endOffset="2503"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="67"
+            column="10"
+            startOffset="2553"
+            endLine="67"
+            endColumn="18"
+            endOffset="2561"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Branch&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="72"
+            column="13"
+            startOffset="2757"
+            endLine="72"
+            endColumn="34"
+            endOffset="2778"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;main&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="74"
+            column="13"
+            startOffset="2828"
+            endLine="74"
+            endColumn="32"
+            endOffset="2847"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Save settings&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="83"
+            column="13"
+            startOffset="3172"
+            endLine="83"
+            endColumn="41"
+            endOffset="3200"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Publish now&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="91"
+            column="13"
+            startOffset="3468"
+            endLine="91"
+            endColumn="39"
+            endOffset="3494"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No subjects yet. Tap + to add one.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_subjects.xml"
+            line="24"
+            column="9"
+            startOffset="926"
+            endLine="24"
+            endColumn="58"
+            endOffset="975"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_subjects.xml"
+            line="31"
+            column="6"
+            startOffset="1245"
+            endLine="31"
+            endColumn="75"
+            endOffset="1314"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Sync&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="17"
+            column="13"
+            startOffset="546"
+            endLine="17"
+            endColumn="32"
+            endOffset="565"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Point this app at the folder your Syncthing app keeps in sync across your devices. This app writes its own change log there and reads everyone else&apos;s on demand.&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="26"
+            column="13"
+            startOffset="865"
+            endLine="26"
+            endColumn="188"
+            endOffset="1040"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Choose sync folder&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="44"
+            column="13"
+            startOffset="1683"
+            endLine="44"
+            endColumn="46"
+            endOffset="1716"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Sync now&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="52"
+            column="13"
+            startOffset="1984"
+            endLine="52"
+            endColumn="36"
+            endOffset="2007"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Forget this folder&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="61"
+            column="13"
+            startOffset="2333"
+            endLine="61"
+            endColumn="46"
+            endOffset="2366"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Clean up conflict files&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="80"
+            column="13"
+            startOffset="3164"
+            endLine="80"
+            endColumn="51"
+            endOffset="3202"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;This device&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="93"
+            column="13"
+            startOffset="3621"
+            endLine="93"
+            endColumn="39"
+            endOffset="3647"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Present&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_attendance.xml"
+            line="46"
+            column="13"
+            startOffset="1581"
+            endLine="46"
+            endColumn="35"
+            endOffset="1603"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Absent&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_attendance.xml"
+            line="56"
+            column="13"
+            startOffset="1974"
+            endLine="56"
+            endColumn="34"
+            endOffset="1995"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Cancelled&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_attendance.xml"
+            line="66"
+            column="13"
+            startOffset="2361"
+            endLine="66"
+            endColumn="37"
+            endOffset="2385"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Delete subject&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_subject.xml"
+            line="39"
+            column="9"
+            startOffset="1349"
+            endLine="39"
+            endColumn="52"
+            endOffset="1392"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/widget_attendance.xml"
+            line="54"
+            column="9"
+            startOffset="2012"
+            endLine="54"
+            endColumn="32"
+            endOffset="2035"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 26. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <fix-data file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26" folderName="mipmap-anydpi" requiresApi="26"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="17"
+            endOffset="276"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/attendance/AttendanceFragment.kt"
+            line="45"
+            column="47"
+            startOffset="1708"
+            endLine="45"
+            endColumn="63"
+            endOffset="1724"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/attendance/AttendanceFragment.kt"
+            line="45"
+            column="48"
+            startOffset="1709"
+            endLine="45"
+            endColumn="56"
+            endOffset="1717"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/calendar/CalendarDayAdapter.kt"
+            line="38"
+            column="9"
+            startOffset="1302"
+            endLine="38"
+            endColumn="31"
+            endOffset="1324"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/calendar/CalendarFragment.kt"
+            line="65"
+            column="47"
+            startOffset="2961"
+            endLine="65"
+            endColumn="73"
+            endOffset="2987"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/publish/PublishFragment.kt"
+            line="92"
+            column="51"
+            startOffset="3577"
+            endLine="92"
+            endColumn="62"
+            endOffset="3588"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/publish/PublishFragment.kt"
+            line="97"
+            column="50"
+            startOffset="3831"
+            endLine="97"
+            endColumn="135"
+            endOffset="3916"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/publish/PublishFragment.kt"
+            line="97"
+            column="58"
+            startOffset="3839"
+            endLine="97"
+            endColumn="87"
+            endOffset="3868"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/publish/PublishFragment.kt"
+            line="104"
+            column="50"
+            startOffset="4277"
+            endLine="104"
+            endColumn="84"
+            endOffset="4311"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/publish/PublishFragment.kt"
+            line="104"
+            column="51"
+            startOffset="4278"
+            endLine="104"
+            endColumn="67"
+            endOffset="4294"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="72"
+            column="46"
+            startOffset="2406"
+            endLine="72"
+            endColumn="72"
+            endOffset="2432"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="75"
+            column="48"
+            startOffset="2638"
+            endLine="75"
+            endColumn="112"
+            endOffset="2702"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="78"
+            column="45"
+            startOffset="2800"
+            endLine="78"
+            endColumn="79"
+            endOffset="2834"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="78"
+            column="46"
+            startOffset="2801"
+            endLine="78"
+            endColumn="59"
+            endOffset="2814"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="83"
+            column="47"
+            startOffset="3166"
+            endLine="83"
+            endColumn="119"
+            endOffset="3238"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="83"
+            column="48"
+            startOffset="3167"
+            endLine="83"
+            endColumn="67"
+            endOffset="3186"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="83"
+            column="69"
+            startOffset="3188"
+            endLine="83"
+            endColumn="77"
+            endOffset="3196"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="83"
+            column="79"
+            startOffset="3198"
+            endLine="83"
+            endColumn="118"
+            endOffset="3237"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="89"
+            column="48"
+            startOffset="3512"
+            endLine="89"
+            endColumn="56"
+            endOffset="3520"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="92"
+            column="45"
+            startOffset="3617"
+            endLine="92"
+            endColumn="79"
+            endOffset="3651"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="92"
+            column="46"
+            startOffset="3618"
+            endLine="92"
+            endColumn="59"
+            endOffset="3631"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="123"
+            column="45"
+            startOffset="5494"
+            endLine="123"
+            endColumn="79"
+            endOffset="5528"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="123"
+            column="46"
+            startOffset="5495"
+            endLine="123"
+            endColumn="59"
+            endOffset="5508"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="127"
+            column="47"
+            startOffset="5751"
+            endLine="127"
+            endColumn="78"
+            endOffset="5782"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/ui/sync/SyncFragment.kt"
+            line="127"
+            column="48"
+            startOffset="5752"
+            endLine="127"
+            endColumn="61"
+            endOffset="5765"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <fix-data conditional="true"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/attendance/app/widget/WidgetUpdater.kt"
+            line="113"
+            column="13"
+            startOffset="5019"
+            endLine="113"
+            endColumn="59"
+            endOffset="5065"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="34"
+            replacement="35"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="14"
+            column="9"
+            startOffset="283"
+            endLine="14"
+            endColumn="23"
+            endOffset="297"/>
+    </incident>
+
+    <incident
+        id="KaptUsageInsteadOfKsp"
+        severity="warning"
+        message="This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp">
+        <show-url
+            description="Learn about how to enable KSP and use the KSP processor for this dependency instead"
+            url="https://developer.android.com/studio/build/migrate-to-ksp"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="54"
+            column="5"
+            startOffset="1382"
+            endLine="54"
+            endColumn="46"
+            endOffset="1423"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.19.0">
+        <fix-replace
+            description="Change to 1.19.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.19.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="40"
+            column="21"
+            startOffset="725"
+            endLine="40"
+            endColumn="50"
+            endOffset="754"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.8.0">
+        <fix-replace
+            description="Change to 1.8.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.8.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="41"
+            column="21"
+            startOffset="777"
+            endLine="41"
+            endColumn="55"
+            endOffset="811"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.11.0 is available: 1.14.0">
+        <fix-replace
+            description="Change to 1.14.0"
+            family="Update versions"
+            oldString="1.11.0"
+            replacement="1.14.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="42"
+            column="21"
+            startOffset="834"
+            endLine="42"
+            endColumn="64"
+            endOffset="877"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.2">
+        <fix-replace
+            description="Change to 2.2.2"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="43"
+            column="21"
+            startOffset="900"
+            endLine="43"
+            endColumn="69"
+            endOffset="948"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.documentfile:documentfile than 1.0.1 is available: 1.1.0">
+        <fix-replace
+            description="Change to 1.1.0"
+            family="Update versions"
+            oldString="1.0.1"
+            replacement="1.1.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="46"
+            column="21"
+            startOffset="1060"
+            endLine="46"
+            endColumn="61"
+            endOffset="1100"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.code.gson:gson than 2.10.1 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.10.1"
+            replacement="2.11.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="49"
+            column="21"
+            startOffset="1196"
+            endLine="49"
+            endColumn="53"
+            endOffset="1228"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.4">
+        <fix-replace
+            description="Change to 2.8.4"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.8.4"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="52"
+            column="21"
+            startOffset="1292"
+            endLine="52"
+            endColumn="53"
+            endOffset="1324"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.4">
+        <fix-replace
+            description="Change to 2.8.4"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.8.4"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="53"
+            column="21"
+            startOffset="1347"
+            endLine="53"
+            endColumn="49"
+            endOffset="1375"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.4">
+        <fix-replace
+            description="Change to 2.8.4"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.8.4"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="54"
+            column="11"
+            startOffset="1388"
+            endLine="54"
+            endColumn="44"
+            endOffset="1421"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.7 is available: 2.9.8">
+        <fix-replace
+            description="Change to 2.9.8"
+            family="Update versions"
+            oldString="2.7.7"
+            replacement="2.9.8"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="57"
+            column="21"
+            startOffset="1473"
+            endLine="57"
+            endColumn="70"
+            endOffset="1522"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.7.7 is available: 2.9.8">
+        <fix-replace
+            description="Change to 2.9.8"
+            family="Update versions"
+            oldString="2.7.7"
+            replacement="2.9.8"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="58"
+            column="21"
+            startOffset="1545"
+            endLine="58"
+            endColumn="64"
+            endOffset="1588"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.11.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="61"
+            column="21"
+            startOffset="1641"
+            endLine="61"
+            endColumn="69"
+            endOffset="1689"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.11.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="62"
+            column="21"
+            startOffset="1712"
+            endLine="62"
+            endColumn="68"
+            endOffset="1759"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.7.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.11.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="63"
+            column="21"
+            startOffset="1782"
+            endLine="63"
+            endColumn="67"
+            endOffset="1828"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.11.2">
+        <fix-replace
+            description="Change to 2.11.2"
+            family="Update versions"
+            oldString="2.9.0"
+            replacement="2.11.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="69"
+            column="21"
+            startOffset="2015"
+            endLine="69"
+            endColumn="57"
+            endOffset="2051"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.security:security-crypto than 1.1.0-alpha06 is available: 1.1.0">
+        <fix-replace
+            description="Change to 1.1.0"
+            family="Update versions"
+            oldString="1.1.0-alpha06"
+            replacement="1.1.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="73"
+            column="21"
+            startOffset="2211"
+            endLine="73"
+            endColumn="68"
+            endOffset="2258"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0">
+        <fix-replace
+            description="Change to 1.3.0"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.3.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="76"
+            column="32"
+            startOffset="2338"
+            endLine="76"
+            endColumn="61"
+            endOffset="2367"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.AttendanceApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_attendance.xml"
+            line="7"
+            column="5"
+            startOffset="236"
+            endLine="7"
+            endColumn="43"
+            endOffset="274"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.AttendanceApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_calendar.xml"
+            line="6"
+            column="5"
+            startOffset="199"
+            endLine="6"
+            endColumn="43"
+            endOffset="237"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.AttendanceApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_publish.xml"
+            line="6"
+            column="5"
+            startOffset="199"
+            endLine="6"
+            endColumn="43"
+            endOffset="237"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.AttendanceApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_subjects.xml"
+            line="7"
+            column="5"
+            startOffset="294"
+            endLine="7"
+            endColumn="43"
+            endOffset="332"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.AttendanceApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_sync.xml"
+            line="6"
+            column="5"
+            startOffset="199"
+            endLine="6"
+            endColumn="43"
+            endOffset="237"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/surface` with a theme that also paints a background (inferred theme is `@style/Theme.AttendanceApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_attendance.xml"
+            line="8"
+            column="5"
+            startOffset="263"
+            endLine="8"
+            endColumn="40"
+            endOffset="298"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/surface` with a theme that also paints a background (inferred theme is `@style/Theme.AttendanceApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_subject.xml"
+            line="9"
+            column="5"
+            startOffset="303"
+            endLine="9"
+            endColumn="40"
+            endOffset="338"/>
+    </incident>
+
+</incidents>

@@ -47,6 +47,22 @@ data class AttendanceEntity(
     val createdAt: String
 )
 
+/**
+ * A day the college/user has marked as a non-attendance day — no classes,
+ * so nothing to mark. Deliberately its own small table (not a flag on
+ * AttendanceEntity) since a holiday exists independent of any subject.
+ *
+ * Sync note: NOT currently written to the sync log — like subject deletion,
+ * this is local-only for now. A shared holiday calendar across devices
+ * would need its own SyncEvent type; out of scope for this change.
+ */
+@Entity(tableName = "holidays")
+data class HolidayEntity(
+    @PrimaryKey val date: String, // ISO format YYYY-MM-DD
+    val reason: String?,
+    val createdAt: String
+)
+
 object AttendanceStatus {
     const val PRESENT = "present"
     const val ABSENT = "absent"

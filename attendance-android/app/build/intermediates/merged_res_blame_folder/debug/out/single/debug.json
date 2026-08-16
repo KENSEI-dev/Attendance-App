@@ -4,63 +4,79 @@
         "source": "com.attendance.app-main-58:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/xml_widget_attendance_info.xml.flat",
-        "source": "com.attendance.app-main-58:/xml/widget_attendance_info.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/drawable_widget_card_background.xml.flat",
-        "source": "com.attendance.app-main-58:/drawable/widget_card_background.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_activity_main.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/activity_main.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_fragment_subjects.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\fragment_subjects.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_item_subject.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/item_subject.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\xml_widget_attendance_info.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\xml\\widget_attendance_info.xml"
     },
     {
         "merged": "com.attendance.app-merged_res-56:/navigation_nav_graph.xml.flat",
         "source": "com.attendance.app-main-58:/navigation/nav_graph.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_fragment_subjects.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/fragment_subjects.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_activity_main.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_fragment_sync.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/fragment_sync.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_fragment_attendance.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\fragment_attendance.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_fragment_publish.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/fragment_publish.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_widget_attendance.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\widget_attendance.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_widget_attendance.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/widget_attendance.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_fragment_sync.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\fragment_sync.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.attendance.app-main-58:/drawable/ic_launcher_background.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_item_attendance.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/item_attendance.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_item_attendance.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\item_attendance.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/layout_fragment_attendance.xml.flat",
-        "source": "com.attendance.app-main-58:/layout/fragment_attendance.xml"
+        "merged": "com.attendance.app-merged_res-56:/layout_fragment_calendar.xml.flat",
+        "source": "com.attendance.app-main-58:/layout/fragment_calendar.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.attendance.app-main-58:/drawable/ic_launcher_foreground.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\drawable_widget_card_background.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\drawable\\widget_card_background.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.attendance.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\menu_bottom_nav_menu.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.attendance.app-merged_res-56:/drawable_ic_widget_refresh.xml.flat",
-        "source": "com.attendance.app-main-58:/drawable/ic_widget_refresh.xml"
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\drawable_ic_widget_refresh.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\drawable\\ic_widget_refresh.xml"
+    },
+    {
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\navigation_nav_graph.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_item_subject.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\item_subject.xml"
+    },
+    {
+        "merged": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-merged_res-56:\\layout_fragment_publish.xml.flat",
+        "source": "E:\\.gradle\\wrapper\\dists\\gradle-8.4-bin\\daemon\\8.4\\com.attendance.app-main-58:\\layout\\fragment_publish.xml"
+    },
+    {
+        "merged": "com.attendance.app-merged_res-56:/layout_item_calendar_day.xml.flat",
+        "source": "com.attendance.app-main-58:/layout/item_calendar_day.xml"
     }
 ]

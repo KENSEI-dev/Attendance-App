@@ -10,6 +10,11 @@
         android:label="@string/title_attendance" />
 
     <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.attendance.app.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar" />
+
+    <fragment
         android:id="@+id/subjectsFragment"
         android:name="com.attendance.app.ui.subjects.SubjectsFragment"
         android:label="@string/title_subjects" />

@@ -6,14 +6,35 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <TextView
-        android:id="@+id/todayLabel"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:textColor="@color/text_primary"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/todayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Toggles between "Mark as holiday" / "Undo holiday" depending on state. -->
+        <Button
+            android:id="@+id/holidayToggleButton"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Mark as holiday" />
+
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -33,6 +54,27 @@
             android:layout_gravity="center"
             android:text="Add a subject first (Subjects tab)"
             android:textColor="@color/text_secondary" />
+
+        <!-- Shown instead of the subject list when today is marked as a holiday. -->
+        <LinearLayout
+            android:id="@+id/holidayMessageGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/holidayMessageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marked as a holiday — no attendance to record today."
+                android:textColor="@color/text_secondary"
+                android:textAlignment="center"
+                android:layout_marginBottom="4dp" />
+
+        </LinearLayout>
 
     </FrameLayout>
 

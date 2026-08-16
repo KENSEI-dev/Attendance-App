@@ -36,6 +36,10 @@ interface AttendanceDao {
     @Query("SELECT * FROM attendance WHERE date = :date ORDER BY subjectId")
     fun getForDate(date: String): Flow<List<AttendanceEntity>>
 
+    /** Session: calendar view needs a whole visible month's worth of records at once, for coloring the day grid. */
+    @Query("SELECT * FROM attendance WHERE date BETWEEN :startDate AND :endDate")
+    fun getBetween(startDate: String, endDate: String): Flow<List<AttendanceEntity>>
+
     @Query("SELECT * FROM attendance WHERE subjectId = :subjectId ORDER BY date DESC")
     fun getForSubject(subjectId: Long): Flow<List<AttendanceEntity>>
 

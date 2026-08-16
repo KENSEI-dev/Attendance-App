@@ -2,6 +2,8 @@ package com.attendance.app.repository
 
 import com.attendance.app.data.AttendanceDao
 import com.attendance.app.data.AttendanceEntity
+import com.attendance.app.data.HolidayDao
+import com.attendance.app.data.HolidayEntity
 import com.attendance.app.data.SubjectDao
 import com.attendance.app.data.SubjectEntity
 import com.attendance.app.data.SubjectSummary
@@ -15,6 +17,7 @@ import java.util.Locale
 class AttendanceRepository(
     private val subjectDao: SubjectDao,
     private val attendanceDao: AttendanceDao,
+    private val holidayDao: HolidayDao,
     private val deviceId: String,
     // Null until a sync folder is configured (see SyncFolderManager) — until
     // then every method below still works, it just doesn't log anything.
@@ -46,17 +49,38 @@ class AttendanceRepository(
     fun getAttendanceForDate(date: String): Flow<List<AttendanceEntity>> =
         attendanceDao.getForDate(date)
 
+    /** Whole-month range read, for the Calendar tab's day grid. */
+    fun getAttendanceBetween(startDate: String, endDate: String): Flow<List<AttendanceEntity>> =
+        attendanceDao.getBetween(startDate, endDate)
+
     fun getSubjectSummaries(): Flow<List<SubjectSummary>> =
         attendanceDao.getSubjectSummaries()
 
+    /**
+     * Was a plain insert with OnConflictStrategy.IGNORE — the actual bug
+     * behind "I can't change an already-marked status": tapping Present
+     * then Absent for the same subject+date silently did nothing on the
+     * second tap, because a row for that (subjectId, date, deviceId) key
+     * already existed and IGNORE means exactly that, ignore. Now a real
+     * upsert: update the existing row's status if one exists and differs,
+     * insert fresh otherwise.
+     */
     suspend fun markAttendance(subjectId: Long, date: String, status: String) {
+        val existing = attendanceDao.findByKey(subjectId, date, deviceId)
+        if (existing != null && existing.status == status) return // already set to this — nothing to do
+
         val timestamp = now()
-        attendanceDao.insert(
-            AttendanceEntity(
-                subjectId = subjectId, date = date, status = status,
-                deviceId = deviceId, createdAt = timestamp
+        if (existing == null) {
+            attendanceDao.insert(
+                AttendanceEntity(
+                    subjectId = subjectId, date = date, status = status,
+                    deviceId = deviceId, createdAt = timestamp
+                )
             )
-        )
+        } else {
+            attendanceDao.update(existing.copy(status = status, createdAt = timestamp))
+        }
+
         val subject = subjectDao.getById(subjectId)
         if (subject != null) {
             syncLogWriter?.append(
@@ -67,6 +91,20 @@ class AttendanceRepository(
 
     suspend fun clearAttendance(subjectId: Long, date: String) {
         attendanceDao.deleteRecord(subjectId, date, deviceId)
+    }
+
+    // --- Holidays (local-only, see HolidayEntity's doc comment) ---
+
+    fun getHolidays(): Flow<List<HolidayEntity>> = holidayDao.getAll()
+
+    suspend fun getHoliday(date: String): HolidayEntity? = holidayDao.findByDate(date)
+
+    suspend fun markHoliday(date: String, reason: String? = null) {
+        holidayDao.insert(HolidayEntity(date = date, reason = reason, createdAt = now()))
+    }
+
+    suspend fun unmarkHoliday(date: String) {
+        holidayDao.delete(date)
     }
 
     // --- Merge (incoming events from other devices, via SyncEngine) ---

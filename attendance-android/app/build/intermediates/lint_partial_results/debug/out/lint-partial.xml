@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.2" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.attendance.app.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="attr[selectableItemBackgroundBorderless(R)],color[cancelled_grey(U),surface(U),text_primary(U),present_green(U),holiday_purple(U),widget_background(U),absent_red(U),background(U),empty_dot(U),primary_dark(U),text_secondary(U),primary(U)],drawable[widget_card_background(U),ic_launcher_foreground(U),ic_launcher_background(U),ic_widget_refresh(U)],id[selectedDateLabel(U),deleteButton(U),attendanceFragment(U),widget_root(U),navHostFragment(U),syncNowButton(U),monthLabel(U),patInput(U),bottomNav(U),subjectsList(U),prevMonthButton(U),ownerInput(U),calendarEmptyState(U),widget_refresh_button(U),widget_percentage(U),calendarSubjectList(U),deviceIdValue(U),publishButton(U),publishStatusText(U),forgetFolderButton(U),folderStatus(U),addSubjectFab(U),widget_updated_at(U),dayCircle(U),subjectCode(U),calendarHolidayToggleButton(U),holidayMessageGroup(U),subjectsFragment(U),nextMonthButton(U),presentButton(U),holidayMessageText(D),chooseFolderButton(U),todayLabel(U),publishedUrlText(U),calendarGrid(U),saveSettingsButton(U),repoInput(U),subjectPercentage(U),widget_matrix_image(U),holidayToggleButton(U),subjectName(U),pathInput(U),branchInput(U),syncFragment(U),nav_graph(D),cancelledButton(U),attendanceList(U),calendarFragment(U),cleanupConflictsButton(U),emptyState(U),syncResultText(U),publishFragment(U),calendarHolidayMessageGroup(U),absentButton(U)],layout[fragment_subjects(U),fragment_sync(U),item_calendar_day(U),widget_attendance(U),fragment_publish(U),fragment_attendance(U),activity_main(U),item_subject(U),item_attendance(U),fragment_calendar(U)],menu[bottom_nav_menu(U)],mipmap[ic_launcher(U)],navigation[nav_graph(U)],string[widget_placeholder_percentage(U),widget_placeholder_updated_at(U),title_publish(U),widget_refresh_content_description(U),title_sync(U),title_calendar(U),app_name(U),widget_matrix_content_description(U),title_subjects(U),title_attendance(U),widget_updated_at(U),widget_description(U)],style[Widget_Material3_Button(R),Widget_Material3_Button_TextButton(R),Theme_Material3_DayNight_NoActionBar(R),Widget_Material3_Button_OutlinedButton(R),Theme_AttendanceApp(U)],xml[widget_attendance_info(U)];d^6,f^c,10^b,47^8^b,48^8^3^b^60^63,49^3,4a^d^54^3^57^10^5b^55^b,4b^8^3^b^63^60^c,4c^8^3^61^b,4d^19^53^51,4e^2^3^b^0,4f^2^3^b^4^63^7^1,50^8^61^3^b^4^7^1^5^9,51^5d^59^5c^58^56,52^f^e,53^13^5d^59^5c^58^56,64^62^c^a^8,65^5f^4a^52;;;"/>
+    </map>
+
+</incidents>

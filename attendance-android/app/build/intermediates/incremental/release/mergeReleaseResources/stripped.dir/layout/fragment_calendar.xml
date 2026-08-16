@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Month navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:id="@+id/prevMonthButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="‹" />
+
+            <TextView
+                android:id="@+id/monthLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nextMonthButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›" />
+
+        </LinearLayout>
+
+        <!-- Weekday header — Sun..Sat, matching the same Sun-first convention
+             used by the widget's dot-matrix and the sync-conflict code's
+             day-of-week mapping elsewhere in this app. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/text_secondary" android:text="Sun" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/text_secondary" android:text="Mon" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/text_secondary" android:text="Tue" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/text_secondary" android:text="Wed" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/text_secondary" android:text="Thu" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/text_secondary" android:text="Fri" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/text_secondary" android:text="Sat" />
+
+        </LinearLayout>
+
+        <!-- GridLayoutManager supports wrap_content height via RecyclerView's
+             auto-measure, so this can sit inside the ScrollView along with
+             everything else — no fixed height, no nested-scroll conflict
+             (nestedScrollingEnabled is also set false in code, belt and
+             braces). -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:overScrollMode="never" />
+
+        <!-- Legend -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:text="● Present" android:textColor="@color/present_green" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:text="● Absent" android:textColor="@color/absent_red" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:text="● Cancelled" android:textColor="@color/cancelled_grey" />
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:text="● Holiday" android:textColor="@color/holiday_purple" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/empty_dot" />
+
+        <!-- Selected date: same input pattern as the Attendance tab (date
+             label + holiday toggle + subject list), just parameterized by
+             whichever date was tapped above instead of always "today". -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/selectedDateLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/calendarHolidayToggleButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Mark as holiday" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/calendarEmptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Add a subject first (Subjects tab)"
+            android:textColor="@color/text_secondary" />
+
+        <LinearLayout
+            android:id="@+id/calendarHolidayMessageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marked as a holiday — no attendance to record on this date."
+                android:textColor="@color/text_secondary"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarSubjectList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+</ScrollView>
