@@ -1,0 +1,82 @@
+{
+  "days": [
+    {
+      "date": "2026-08-03",
+      "status": "present"
+    },
+    {
+      "date": "2026-08-04",
+      "status": "present"
+    },
+    {
+      "date": "2026-08-05",
+      "status": "present"
+    },
+    {
+      "date": "2026-08-06",
+      "status": "absent"
+    },
+    {
+      "date": "2026-08-07",
+      "status": "absent"
+    },
+    {
+      "date": "2026-08-10",
+      "status": "present"
+    },
+    {
+      "date": "2026-08-11",
+      "status": "absent"
+    },
+    {
+      "date": "2026-08-12",
+      "status": "present"
+    },
+    {
+      "date": "2026-08-13",
+      "status": "absent"
+    },
+    {
+      "date": "2026-08-14",
+      "status": "present"
+    },
+    {
+      "date": "2026-08-15",
+      "status": "absent"
+    },
+    {
+      "date": "2026-08-16",
+      "status": "present"
+    },
+    {
+      "date": "2026-08-17",
+      "status": "absent"
+    }
+  ],
+  "deviceId": "android-697d124c",
+  "generatedAt": "2026-08-16T19:29:13.578990Z",
+  "overall": {
+    "absent": 7,
+    "cancelled": 1,
+    "percentage": 56,
+    "present": 9
+  },
+  "subjects": [
+    {
+      "absent": 6,
+      "cancelled": 1,
+      "code": "ESC501",
+      "name": "Signals \u0026 Systems",
+      "percentage": 53,
+      "present": 7
+    },
+    {
+      "absent": 1,
+      "cancelled": 0,
+      "code": "PCCCS504",
+      "name": "Software Engineering \u0026 Project Management",
+      "percentage": 66,
+      "present": 2
+    }
+  ]
+}
